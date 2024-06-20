@@ -12,3 +12,16 @@ BEGIN
     END LOOP;
 END;
 /
+===============================================================================
+BEGIN
+    FOR i IN 1..300 LOOP
+        INSERT INTO Member(member_id, password, name, email)
+        VALUES (
+            i,
+            'password' || i,
+            'name' || i,
+            'email' || i || '@example.com'
+        );
+    END LOOP;
+END;
+===============================================================================
