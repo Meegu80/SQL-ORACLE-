@@ -17,6 +17,12 @@ create table member(
     email varchar2(50) unique
 );
 
+CREATE TABLE "DEPARTMENT" (
+   "DEPT_ID"   NUMBER      NOT NULL,
+   "NAME"   VARCHAR2(50)      NOT NULL,
+   "OFFICE"   VARCHAR2(20)      NOT NULL
+);
+
 create table board(
     bno number constraint pk_board primary key,
     title varchar2(200) not null,
@@ -26,4 +32,18 @@ create table board(
     constraint fk_member_id foreign key(member_id) references member(member_id)
 );
 
+alter table board
+    add constraint board_mem_fk foreign key (id)
+    references member (id);
+select * from tab;
+
 create sequence seq_board increment by 1 start with 1;
+
+insert into board  (num, title, content, id, postdate, visitcount) 
+	values (seq_board_num.nextval, '제목1입니다', '내용1입니다', 'musthave', sysdate, 0);
+
+drop table board;
+drop sequence seq_board_num;
+
+commit;
+
