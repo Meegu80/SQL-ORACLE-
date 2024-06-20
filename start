@@ -1,0 +1,29 @@
+SQL 시작할때 반드시 쓰게되는 구문
+
+show user;
+
+-- board 계정 생성
+create user board identified by 1234;
+grant connect, resource to board;
+grant unlimited tablespace to board;
+
+SYS관리자 모드 해제하고 BOARD로 로그인할 것
+==================================================================
+
+create table member(
+    member_id varchar2(20) constraint pk_member primary key,
+    password varchar2(50) not null,
+    name varchar2(20) not null,
+    email varchar2(50) unique
+);
+
+create table board(
+    bno number constraint pk_board primary key,
+    title varchar2(200) not null,
+    content clob not null,
+    member_id varchar2(20),
+    reg_date date default sysdate,
+    constraint fk_member_id foreign key(member_id) references member(member_id)
+);
+
+create sequence seq_board increment by 1 start with 1;
