@@ -1,0 +1,9 @@
+-- row_number() : 윈도우 함수
+-- 페이징 페이지네이션을 위한 사전 작업, 3단 쿼리를 대신해서 이렇게 쓸 수 도 있다.
+  
+select a.bno, a.title, a.member_id, a.hit_no, a.reg_date, a.row_num
+from(
+    select b.*, row_number() over(order by b.reg_date asc) row_num
+    from board b
+)a
+where a.row_num between 2 and 10;  --2위부터 10위까지 화면에 보이게 한다--
