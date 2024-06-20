@@ -1,4 +1,35 @@
-SQL shortcut key
+Oracle SQL Developer 단축키(SQL shortcut key)
 실행 : F9 또는 Ctrl + Enter
 전체 실행 : F5
+SQL 워크시트 열기 : Ctrl + Shift + N
 
+워크시트 관련 단축키:
+새 SQL 워크시트 열기: Ctrl + Shift + N (Windows/Linux), Cmd + Shift + N (macOS)
+워크시트 닫기: Ctrl + W (Windows/Linux), Cmd + W (macOS)
+워크시트 탭 이동: Ctrl + Tab (다음 탭으로 이동), Ctrl + Shift + Tab (이전 탭으로 이동)
+쿼리 실행과 관련된 단축키:
+
+쿼리 실행: F9 또는 Ctrl + Enter
+선택된 쿼리 실행: F5 또는 Ctrl + F9, 녹색화살표 버튼 클릭
+쿼리 취소: Ctrl + Break
+결과 그리드와 관련된 단축키:
+
+결과 그리드에서 셀 편집: F2 또는 Ctrl + E
+결과 그리드에서 다음 페이지로 이동: Alt + Page Down
+결과 그리드에서 이전 페이지로 이동: Alt + Page Up
+Oracle SQL*Plus 단축키
+기본적인 명령어 단축키:
+
+쿼리 실행: Enter
+쿼리 취소: Ctrl + C
+명령어 히스토리 탐색: 이전 명령어: ↑, 다음 명령어: ↓
+편집과 관련된 단축키:
+
+라인의 시작으로 이동: Ctrl + A
+라인의 끝으로 이동: Ctrl + E
+현재 라인 삭제: Ctrl + U
+기타 유용한 단축키:
+
+화면 지우기: Ctrl + L
+도움말 보기: Help 또는 ?
+공백 및 엔터표시 : Ctrl + Shift + W
