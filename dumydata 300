@@ -1,0 +1,14 @@
+--SQL에서 더미데이터 300개 만들기--
+BEGIN
+    FOR i IN 1..300 LOOP
+        INSERT INTO board(bno, title, content, member_id, reg_date)
+        VALUES (
+            i,
+            '제목' || i,
+            '내용' || i,
+            'java',
+            SYSDATE - TRUNC(DBMS_RANDOM.VALUE(0, 365))
+        );
+    END LOOP;
+END;
+/
