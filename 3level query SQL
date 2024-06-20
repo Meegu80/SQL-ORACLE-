@@ -1,0 +1,12 @@
+-- 페이징 페이지네이션 --(페이지수 표기하는 것)
+-- 아래 3단 쿼리(from 3개)
+select c.* 
+from(
+    select rownum as seq, b.bno, b.title, b.member_id, b.hit_no, b.reg_date
+    from(
+        select bno, title, member_id, reg_date. hit_no
+        from board
+        order by reg_date desc
+    ) b
+) c 
+where rownum between 2 and 5;
