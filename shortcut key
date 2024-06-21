@@ -2,6 +2,7 @@ Oracle SQL Developer 단축키(SQL shortcut key)
 실행 : F9 또는 Ctrl + Enter
 전체 실행 : F5
 SQL 워크시트 열기 : Ctrl + Shift + N (되다말다하네, 뭔가 조건같은게 있는거 같기도하고)
+Ctrl + N도 되지만 번거롭게한다. 그냥 계정 클릭하고 마우스 오른쪽, 하단 2번째하는 걸 추천.
 
 워크시트 관련 단축키:
 새 SQL 워크시트 열기: Ctrl + Shift + N (Windows/Linux), Cmd + Shift + N (macOS)
@@ -35,420 +36,214 @@ Oracle SQL*Plus 단축키
 공백 및 엔터표시 : Ctrl + Shift + W
 
 ==============================================================================
-<!DOCTYPE html>
-<html>
-<head>
-    <title>3-Column Table</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
-
-<table>
-    <tr>
-        <th>범주</th>
-        <th>명령</th>
-        <th>단축키</th>
-    </tr>
-    <tr>
-        <td>Worksheet</td>
-        <td>SQL 워크시트(W)</td>
-        <td>Alt-F10</td>
-    </tr>
-    <tr>
-        <td>Worksheet</td>
-        <td>계획 설명(E)...</td>
-        <td>F10</td>
-    </tr>
-    <tr>
-        <td>Worksheet</td>
-        <td>내역(H)</td>
-        <td>F8</td>
-    </tr>
-    <tr>
-        <td>Worksheet</td>
-        <td>롤백(R)</td>
-        <td>F12</td>
-    </tr>
-    <tr>
-        <td>Worksheet</td>
-        <td>명령문 실행</td>
-        <td>F9</td>
-    </tr>
-    <tr>
-        <td>Worksheet</td>
-        <td>명령문 실행</td>
-        <td>Ctrl-Enter</td>
-    </tr>
-    <tr>
-        <td>Worksheet</td>
-        <td>비공유 SQL 워크시트</td>
-        <td>Ctrl-Shift-N</td>
-    </tr>
-    <tr>
-        <td>Worksheet</td>
-        <td>스크립트 실행</td>
-        <td>F5</td>
-    </tr>
-    <tr>
-        <td>Worksheet</td>
-        <td>자동 추적(A)...</td>
-        <td>F6</td>
-    </tr>
-    <tr>
-        <td>Worksheet</td>
-        <td>지우기(C)</td>
-        <td>Ctrl-D</td>
-    </tr>
-    <tr>
-<td>커밋(O)</td>
-        <td>F11</td>
-    </tr>
-    <tr>
-        <td>검색</td>
-        <td>다음 찾기(N)</td>
-        <td>F3</td>
-    </tr>
-    <tr>
-        <td>검색</td>
-        <td>바꾸기...(R)</td>
-        <td>Ctrl-R</td>
-    </tr>
-    <tr>
-        <td>검색</td>
-        <td>이전 찾기(P)</td>
-        <td>Shift-F3</td>
-    </tr>
-    <tr>
-        <td>검색</td>
-        <td>증분 뒤로 찾기(B)</td>
-        <td>Ctrl-Shift-E</td>
-    </tr>
-    <tr>
-        <td>검색</td>
-        <td>증분 앞으로 찾기(O)</td>
-        <td>Ctrl-E</td>
-    </tr>
-    <tr>
-        <td>검색</td>
-        <td>찾기...(F)</td>
-        <td>Ctrl-F</td>
-    </tr>
-    <tr>
-        <td>검색</td>
-        <td>커서 다음 단어 찾기</td>
-        <td>Ctrl-F3</td>
-    </tr>
-    <tr>
-        <td>검색</td>
-        <td>커서 앞 단어 찾기</td>
-        <td>Ctrl-Shift-F3</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>SQL 내역: 다음 내역에서 추가</td>
-        <td>Ctrl-Shift-Down</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>SQL 내역: 다음 내역으로 바꾸기</td>
-        <td>Ctrl-Down</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>SQL 내역: 이전 내역에서 추가</td>
-        <td>Ctrl-Shift-Up</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>SQL 내역: 이전 내역으로 바꾸기</td>
-        <td>Ctrl-Up</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>고급 형식...</td>
-        <td>Ctrl-Shift-F7</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>구현 디버그</td>
-        <td>Shift-F9</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>대문자/소문자/첫 자를 대문자로</td>
-        <td>Ctrl-Quote</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>변경 사항 롤백</td>
-        <td>F12</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>변경 사항 커밋</td>
-        <td>F11</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>보기 고정</td>
-        <td>Ctrl-Shift-P</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>새로 고침</td>
-        <td>Ctrl-R</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>새로 만들기(N)...</td>
-        <td>Ctrl-N</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>테스트 실행</td>
-        <td>F9</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>파일 실행</td>
-        <td>Ctrl-F11</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>팝업 메뉴</td>
-        <td>Shift-F10</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>팝업 메뉴</td>
-        <td>Context Menu</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>팝업 설명</td>
-        <td>Shift-F4</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>편집(E)</td>
-        <td>Ctrl-L</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>형식</td>
-        <td>Ctrl-F7</td>
-    </tr>
-    <tr>
-        <td>데이터 편집기</td>
-        <td>데이터 필터링</td>
-        <td>Ctrl-Alt-F</td>
-    </tr>
-    <tr>
-        <td>데이터 편집기</td>
-        <td>변경 사항 롤백</td>
-        <td>F12</td>
-    </tr>
-    <tr>
-        <td>데이터 편집기</td>
-        <td>변경 사항 커밋</td>
-        <td>F11</td>
-    </tr>
-    <tr>
-        <td>데이터 편집기</td>
-        <td>새로 고침</td>
-        <td>Ctrl-R</td>
-    </tr>
-    <tr>
-        <td>데이터 편집기</td>
-        <td>선택된 행 삭제</td>
-        <td>Ctrl-D</td>
-    </tr>
-    <tr>
-        <td>데이터 편집기</td>
-        <td>정렬...</td>
-        <td>Ctrl-Alt-S</td>
-    </tr>
-    <tr>
-        <td>데이터 편집기</td>
-        <td>행 삽입</td>
-        <td>Ctrl-I</td>
-    </tr>
-    <tr>
-        <td>도구</td>
-        <td>공백 표시</td>
-        <td>Ctrl-Shift-W</td>
-    </tr>
-    <tr>
-        <td>도움말</td>
-        <td>뒤로</td>
-        <td>Ctrl-Alt-Left</td>
-    </tr>
-    <tr>
-        <td>도움말</td>
-        <td>문맥에 따른 도움말</td>
-        <td>F1</td>
-    </tr>
-    <tr>
-        <td>도움말</td>
-        <td>문맥에 따른 도움말</td>
-        <td>Shift-F1</td>
-    </tr>
-    <tr>
-        <td>도움말</td>
-        <td>앞으로</td>
-        <td>Ctrl-Alt-Right</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>감시...(W)</td>
-        <td>Ctrl-F5</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>검사...(I)</td>
-        <td>Ctrl-I</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>내부 이동</td>
-        <td>F7</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>외부 이동</td>
-        <td>Shift-F7</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>이동 계속(C)</td>
-        <td>Shift-F8</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>재개</td>
-        <td>F9</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>전체 이동</td>
-        <td>F8</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>종료</td>
-        <td>Ctrl-F2</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>중단점 토글(T)</td>
-        <td>F5</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>커서까지 실행(U)</td>
-        <td>F4</td>
-    </tr>
-    <tr>
-        <td>디버그</td>
-        <td>프로젝트 디버그</td>
-        <td>Shift-F9</td>
-    </tr>
-    <tr>
-        <td>버전 지정</td>
-        <td>속성(버전 지정)</td>
-        <td>Ctrl-Shift-F1</td>
-    </tr>
-    <tr>
-        <td>버전 지정</td>
-        <td>작업 추가</td>
-        <td>Alt-A</td>
-    </tr>
-    <tr>
-        <td>버전 지정</td>
-        <td>체크아웃</td>
-        <td>Alt-H</td>
-    </tr>
-    <tr>
-        <td>버전 지정</td>
-        <td>체크인</td>
-        <td>Alt-L</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>블록 들여쓰기</td>
-        <td>Ctrl-]</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>블록 내어쓰기</td>
-        <td>Ctrl-[</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>수직 블록 선택</td>
-        <td>Alt-C</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>시작으로 이동</td>
-        <td>Ctrl-Home</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>시행 취소</td>
-        <td>Ctrl-Z</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>자동 줄 바꿈</td>
-        <td>Ctrl-Shift-W</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>잘라내기</td>
-        <td>Ctrl-X</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>재실행</td>
-        <td>Ctrl-Y</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>전체 들여쓰기</td>
-        <td>Ctrl-Shift-]</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>전체 선택</td>
-        <td>Ctrl-A</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>참조 보기</td>
-        <td>F3</td>
-    </tr>
-    <tr>
-        <td>소스 편집기</td>
-        <td>포맷 코드</td>
-        <td>Ctrl-Shift-F</td>
-    </tr>
-</table>
-
-</body>
-</html>
-
+| 범주        | 명령                        | 단축키                |
+|-------------|-----------------------------|-----------------------|
+| Worksheet   | SQL 워크시트(W)             | Alt-F10               |
+| Worksheet   | 계획 설명(E)...             | F10                   |
+| Worksheet   | 내역(H)                     | F8                    |
+| Worksheet   | 롤백(R)                     | F12                   |
+| Worksheet   | 명령문 실행                 | F9                    |
+| Worksheet   | 명령문 실행                 | Ctrl-Enter            |
+| Worksheet   | 비공유 SQL 워크시트         | Ctrl-Shift-N          |
+| Worksheet   | 스크립트 실행               | F5                    |
+| Worksheet   | 자동 추적(A)...             | F6                    |
+| Worksheet   | 지우기(C)                   | Ctrl-D                |
+| Worksheet   | 커밋(O)                     | F11                   |
+| 검색        | 다음 찾기(N)                | F3                    |
+| 검색        | 바꾸기...(R)                | Ctrl-R                |
+| 검색        | 이전 찾기(P)                | Shift-F3              |
+| 검색        | 증분 뒤로 찾기(B)           | Ctrl-Shift-E          |
+| 검색        | 증분 앞으로 찾기(O)         | Ctrl-E                |
+| 검색        | 찾기...(F)                  | Ctrl-F                |
+| 검색        | 커서 다음 단어 찾기         | Ctrl-F3               |
+| 검색        | 커서 앞 단어 찾기           | Ctrl-Shift-F3         |
+| 기타        | SQL 내역: 다음 내역에서 추가 | Ctrl-Shift-Down       |
+| 기타        | SQL 내역: 다음 내역으로 바꾸기| Ctrl-Down             |
+| 기타        | SQL 내역: 이전 내역에서 추가 | Ctrl-Shift-Up         |
+| 기타        | SQL 내역: 이전 내역으로 바꾸기| Ctrl-Up               |
+| 기타        | 고급 형식...                | Ctrl-Shift-F7         |
+| 기타        | 구현 디버그                 | Shift-F9              |
+| 기타        | 대문자/소문자/첫 자를 대문자로| Ctrl-Quote            |
+| 기타        | 변경 사항 롤백              | F12                   |
+| 기타        | 변경 사항 커밋              | F11                   |
+| 기타        | 보기 고정                   | Ctrl-Shift-P          |
+| 기타        | 새로 고침                   | Ctrl-R                |
+| 기타        | 새로 만들기(N)...           | Ctrl-N                |
+| 기타        | 테스트 실행                 | F9                    |
+| 기타        | 파일 실행                   | Ctrl-F11              |
+| 기타        | 팝업 메뉴                   | Shift-F10             |
+| 기타        | 팝업 메뉴                   | Context Menu          |
+| 기타        | 팝업 설명                   | Shift-F4              |
+| 기타        | 편집(E)                     | Ctrl-L                |
+| 기타        | 형식                        | Ctrl-F7               |
+| 데이터 편집기| 데이터 필터링               | Ctrl-Alt-F            |
+| 데이터 편집기| 변경 사항 롤백              | F12                   |
+| 데이터 편집기| 변경 사항 커밋              | F11                   |
+| 데이터 편집기| 새로 고침                   | Ctrl-R                |
+| 데이터 편집기| 선택된 행 삭제              | Ctrl-D                |
+| 데이터 편집기| 정렬...                     | Ctrl-Alt-S            |
+| 데이터 편집기| 행 삽입                     | Ctrl-I                |
+| 도구        | 공백 표시                   | Ctrl-Shift-W          |
+| 도움말      | 뒤로                        | Ctrl-Alt-Left         |
+| 도움말      | 문맥에 따른 도움말          | F1                    |
+| 도움말      | 문맥에 따른 도움말          | Shift-F1              |
+| 도움말      | 앞으로                      | Ctrl-Alt-Right        |
+| 디버그      | 감시...(W)                  | Ctrl-F5               |
+| 디버그      | 검사...(I)                  | Ctrl-I                |
+| 디버그      | 내부 이동                   | F7                    |
+| 디버그      | 외부 이동                   | Shift-F7              |
+| 디버그      | 이동 계속(C)                | Shift-F8              |
+| 디버그      | 재개                        | F9                    |
+| 디버그      | 전체 이동                   | F8                    |
+| 디버그      | 종료                        | Ctrl-F2               |
+| 디버그      | 중단점 토글(T)              | F5                    |
+| 디버그      | 커서까지 실행(U)            | F4                    |
+| 디버그      | 프로젝트 디버그             | Shift-F9              |
+| 버전 지정   | 속성(버전 지정)             | Ctrl-Shift-O          |
+| 보기        | 로그(L)                     | Ctrl-Shift-L          |
+| 보기        | 중단점(B)                   | Ctrl-Shift-R          |
+| 소스        | 모두 축소(A)                | Ctrl-Shift-Open Bracket|
+| 소스        | 모두 확장(L)                | Ctrl-Shift-Close Bracket|
+| 소스        | 재형식화                    | Ctrl-Alt-L            |
+| 소스        | 재형식화                    | Alt-Shift-F           |
+| 실행(R)     | 프로젝트 실행               | F11                   |
+| 이동        | 0 책갈피 토글               | Ctrl-Shift-0          |
+| 이동        | 0 책갈피로 이동             | Ctrl-0                |
+| 이동        | 1 책갈피 토글               | Ctrl-Shift-1          |
+| 이동        | 1 책갈피로 이동             | Ctrl-1                |
+| 이동        | 2 책갈피 토글               | Ctrl-Shift-2          |
+| 이동        | 2 책갈피로 이동             | Ctrl-2                |
+| 이동        | 3 책갈피 토글               | Ctrl-Shift-3          |
+| 이동        | 3 책갈피로 이동             | Ctrl-3                |
+| 이동        | 4 책갈피 토글               | Ctrl-Shift-4          |
+| 이동        | 4 책갈피로 이동             | Ctrl-4                |
+| 이동        | 5 책갈피 토글               | Ctrl-Shift-5          |
+| 이동        | 5 책갈피로 이동             | Ctrl-5                |
+| 이동        | 6 책갈피 토글               | Ctrl-Shift-6          |
+| 이동        | 6 책갈피로 이동             | Ctrl-6                |
+| 이동        | 7 책갈피 토글               | Ctrl-Shift-7          |
+| 이동        | 7 책갈피로 이동             | Ctrl-7                |
+| 이동        | 8 책갈피 토글               | Ctrl-Shift-8          |
+| 이동        | 8 책갈피로 이동             | Ctrl-8                |
+| 이동        | 9 책갈피 토글               | Ctrl-Shift-9          |
+| 이동        | 9 책갈피로 이동             | Ctrl-9                |
+| 이동        | Maximize Toggle             | Ctrl-Alt-M            |
+| 이동        | 기호 문서 찾아보기...       | Alt-Shift-Minus       |
+| 이동        | 기호 찾아보기...(M)         | Ctrl-Minus            |
+| 이동        | 다음 메시지로 이동(X)       | Alt-F8                |
+| 이동        | 다음 책갈피로 이동(O)       | Ctrl-Q                |
+| 이동        | 뒤로(C)                     | Alt-Left              |
+| 이동        | 앞으로(W)                   | Alt-Right             |
+| 이동        | 이전 메시지로 이동(V)       | Alt-F7                |
+| 이동        | 이전 책갈피로 이동(P)       | Ctrl-Shift-Q          |
+| 이동        | 책갈피 토글(T)              | Ctrl-K                |
+| 이동        | 책갈피로 이동...(B)         | Ctrl-Shift-K          |
+| 이동        | 최근 파일로 이동(F)...      | Ctrl-Equals           |
+| 이동        | 최근 편집으로 이동(E)       | Ctrl-Shift-Backspace  |
+| 이동        | 행으로 이동...(G)           | Ctrl-G                |
+| 창          | 1 문서 활성화               | Alt-1                 |
+| 창          | 2 문서 활성화               | Alt-2                 |
+| 창          | 3 문서 활성화               | Alt-3                 |
+| 창          | 4 문서 활성화               | Alt-4                 |
+| 창          | 5 문서 활성화               | Alt-5                 |
+| 창          | 6 문서 활성화               | Alt-6                 |
+| 창          | 7 문서 활성화               | Alt-7                 |
+| 창          | 8 문서 활성화               | Alt-8                 |
+| 창          | 9 문서 활성화               | Alt-9                 |
+| 창          | Alt+1에 지정                | Alt-Shift-1           |
+| 창          | Alt+2에 지정                | Alt-Shift-2           |
+| 창          | Alt+3에 지정                | Alt-Shift-3           |
+| 창          | Alt+4에 지정                | Alt-Shift-4           |
+| 창          | Alt+5에 지정                | Alt-Shift-5           |
+| 창          | Alt+6에 지정                | Alt-Shift-6           |
+| 창          | Alt+7에 지정                | Alt-Shift-7           |
+| 창          | Alt+8에 지정                | Alt-Shift-8           |
+| 창          | Alt+9에 지정                | Alt-Shift-9           |
+| 창          | 다음 창(X)                  | F6                    |
+| 창          | 다음 파일(N)                | Ctrl-F6               |
+| 창          | 다음 파일(N)                | Ctrl-Tab              |
+| 창          | 오른쪽 편집기(G)            | Alt-Page Down         |
+| 창          | 왼쪽 편집기(E)              | Alt-Page Up           |
+| 창          | 이전 창(V)                  | Shift-F6              |
+| 창          | 이전 파일(P)                | Ctrl-Shift-F6         |
+| 창          | 이전 파일(P)                | Ctrl-Shift-Tab        |
+| 창          | 파일 목록(F)                | Alt-0                 |
+| 창          | 편집기 메뉴 표시(S)         | Alt-Minus             |
+| 코드 편집기 | 다음 단어 시작 부분까지 삭제 | Ctrl-Delete           |
+| 코드 편집기 | 다음 단어 시작 부분까지 삭제 | Ctrl-T                |
+| 코드 편집기 | 다음 단어 시작 부분으로 이동 | Ctrl-Right            |
+| 코드 편집기 | 뒤로 이동                   | Left                  |
+| 코드 편집기 | 로컬 탭 크기를 2로 설정     | Ctrl-2                |
+| 코드 편집기 | 로컬 탭 크기를 4로 설정     | Ctrl-4                |
+| 코드 편집기 | 로컬 탭 크기를 8로 설정     | Ctrl-8                |
+| 코드 편집기 | 매개변수 인사이트(P)        | Ctrl-Shift-Space      |
+| 코드 편집기 | 삽입 모드 토글              | Insert                |
+| 코드 편집기 | 새 행 삽입                  | Shift-Enter           |
+| 코드 편집기 | 새 행 삽입                  | Enter                 |
+| 코드 편집기 | 선택 사항 뒤로 이동         | Shift-Left            |
+| 코드 편집기 | 선택 사항 복제              | Ctrl-Shift-D          |
+| 코드 편집기 | 선택 사항 아래로 이동       | Shift-Down            |
+| 코드 편집기 | 선택 사항 앞으로 이동       | Shift-Right           |
+| 코드 편집기 | 선택 사항 위로 이동         | Shift-Up              |
+| 코드 편집기 | 선택 사항을 다음 단어 시작 부분으로 이동 | Ctrl-Shift-Right |
+| 코드 편집기 | 선택 사항을 이전 단어 시작 부분으로 이동 | Ctrl-Shift-Left  |
+| 코드 편집기 | 선택 사항을 파일 끝으로 이동 | Ctrl-Shift-End        |
+| 코드 편집기 | 선택 사항을 파일 시작 부분으로 이동 | Ctrl-Shift-Home  |
+| 코드 편집기 | 선택 사항을 페이지 아래로 이동 | Shift-Page Down  |
+| 코드 편집기 | 선택 사항을 페이지 위로 이동 | Shift-Page Up        |
+| 코드 편집기 | 선택 사항을 행 끝으로 이동 | Shift-End             |
+| 코드 편집기 | 선택 사항을 행 시작 부분으로 이동 | Shift-Home         |
+| 코드 편집기 | 선택 해제                   | Ctrl-Back Slash       |
+| 코드 편집기 | 선행 공백을 탭으로 변환     | Ctrl-Shift-T          |
+| 코드 편집기 | 선행 탭을 공백으로 변환     | Ctrl-Shift-U          |
+| 코드 편집기 | 스마트 완성 인사이트(A)     | Ctrl-Alt-Space        |
+| 코드 편집기 | 아래로 이동                 | Down                  |
+| 코드 편집기 | 앞으로 이동                 | Right                 |
+| 코드 편집기 | 역방향 탭                   | Shift-Tab             |
+| 코드 편집기 | 완성 인사이트(C)            | Ctrl-Space            |
+| 코드 편집기 | 위로 이동                   | Up                    |
+| 코드 편집기 | 이전 단어 시작 부분까지 삭제 | Ctrl-Backspace        |
+| 코드 편집기 | 이전 단어 시작 부분으로 이동 | Ctrl-Left             |
+| 코드 편집기 | 이전 문자 삭제              | Shift-Backspace       |
+| 코드 편집기 | 이전 문자 삭제              | Backspace             |
+| 코드 편집기 | 일치하는 중괄호까지 선택    | Alt-Shift-Close Bracket |
+| 코드 편집기 | 일치하는 중괄호까지 선택    | Alt-Shift-Open Bracket  |
+| 코드 편집기 | 일치하는 중괄호로 이동      | Alt-Open Bracket      |
+| 코드 편집기 | 일치하는 중괄호로 이동      | Alt-Close Bracket     |
+| 코드 편집기 | 취소                        | Escape                |
+| 코드 편집기 | 탭 삽입                     | Tab                   |
+| 코드 편집기 | 파일 끝으로 이동            | Ctrl-End              |
+| 코드 편집기 | 파일 시작 부분으로 이동     | Ctrl-Home             |
+| 코드 편집기 | 페이지 아래로 이동          | Page Down             |
+| 코드 편집기 | 페이지 위로 이동            | Page Up               |
+| 코드 편집기 | 행 끝까지 삭제              | Ctrl-Shift-Y          |
+| 코드 편집기 | 행 끝으로 이동              | End                   |
+| 코드 편집기 | 행 시작 부분으로 이동       | Home                  |
+| 코드 편집기 | 행 아래로 스크롤            | Ctrl-Down             |
+| 코드 편집기 | 행 위로 스크롤              | Ctrl-Up               |
+| 코드 편집기 | 행 조인                     | Ctrl-J                |
+| 코드 편집기 | 행 주석 토글(T)             | Ctrl-Slash            |
+| 코드 편집기 | 행 주석 토글(T)             | Ctrl-Shift-Slash      |
+| 파일        | 닫기                        | Ctrl-F4               |
+| 파일        | 닫기                        | Ctrl-W                |
+| 파일        | 모두 닫기(E)                | Ctrl-Shift-F4         |
+| 파일        | 열기...(O)                  | Ctrl-O                |
+| 파일        | 인쇄...(P)                  | Ctrl-P                |
+| 파일        | 저장(S)                     | Ctrl-S                |
+| 파일        | 종료(X)                     | Alt-F4                |
+| 편집        | 실행 취소                   | Alt-Backspace         |
+| 편집        | 실행 취소                   | Ctrl-Z                |
+| 편집        | 재실행                      | Alt-Shift-Backspace   |
+| 편집        | 재실행                      | Ctrl-Shift-Z          |
+| 편집        | 재실행                      | Ctrl-Y                |
+| 편집        | 경로 복사(H)                | Ctrl-Shift-C          |
+| 편집        | 모두 선택(A)                | Ctrl-A                |
+| 편집        | 복사(C)                     | Ctrl-C                |
+| 편집        | 복사(C)                     | Ctrl-Insert           |
+| 편집        | 붙여넣기(P)                 | Shift-Insert          |
+| 편집        | 붙여넣기(P)                 | Ctrl-V                |
+| 편집        | 삭제(D)                     | Delete                |
+| 편집        | 잘라내기(T)                 | Shift-Delete          |
+| 편집        | 잘라내기(T)                 | Ctrl-X                |
+| 편집        | 확장된 붙여넣기...(E)       | Ctrl-Shift-V          |
 [출처:https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=kaiz00&logNo=221616018855&categoryNo=0&parentCategoryNo=49&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search]
