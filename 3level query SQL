@@ -10,3 +10,22 @@ from(
     ) b
 ) c 
 where rownum between 2 and 5;
+===================================================================================
+JSP에서 아래 이유로 활용하기 위함이다
+출처: 우리학원 오선생님 강의문 발췌
+
+row_number() 함수
+
+​row_number() 함수는 정렬과 rownum을 결합 해놓은 함수와 같다.
+원래는 정렬과 rownum을 함께 사용할 수 없다. 그래서 3단 서브쿼리를 사용한다.
+하지만 이 함수를 이용하게 되면 정해진 정렬 조건에 따라서 정렬이 이뤄지고 정렬된
+결과에 고유한 번호를 매겨준다. 그러면 이를 감싼 바깥 쿼리문의 where 절에서 그 
+고유번호를 사용해서 페이징을 할 수 있다.
+3단 쿼리문을 작성하던 것을 2단 서브쿼리로 처리할 수 있다.
+
+			sql.append("select a.bno, a.title, a.member_id, a.hit_no, a.reg_date ");
+			sql.append("from( ");
+			sql.append("select b.*, row_number() over(order by b.reg_date asc) row_num ");
+			sql.append("from board b ");
+			sql.append(")a ");
+			sql.append("where a.row_num between ? and ?");
