@@ -1,5 +1,12 @@
 SQL 시작할때 반드시 쓰게되는 구문
 
+윈도우키 + R
+CMD
+SQLPLUS
+
+사용자명 : sys as sysdba
+암호: 1234
+
 show user;
 
 -- board 계정 생성
@@ -47,3 +54,11 @@ drop sequence seq_board_num;
 
 commit;
 
+-- 트리거를 사용하여 Board 테이블에 데이터 삽입 시 bno 자동 생성
+CREATE OR REPLACE TRIGGER trg_bno
+BEFORE INSERT ON Board
+FOR EACH ROW
+BEGIN
+    SELECT bno_seq.NEXTVAL INTO :NEW.bno FROM dual;
+END;
+/
