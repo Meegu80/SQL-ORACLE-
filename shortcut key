@@ -1,7 +1,7 @@
 Oracle SQL Developer 단축키(SQL shortcut key)
 실행 : F9 또는 Ctrl + Enter
 전체 실행 : F5
-SQL 워크시트 열기 : Ctrl + Shift + N
+SQL 워크시트 열기 : Ctrl + Shift + N (되다말다하네, 뭔가 조건같은게 있는거 같기도하고)
 
 워크시트 관련 단축키:
 새 SQL 워크시트 열기: Ctrl + Shift + N (Windows/Linux), Cmd + Shift + N (macOS)
@@ -33,3 +33,422 @@ Oracle SQL*Plus 단축키
 화면 지우기: Ctrl + L
 도움말 보기: Help 또는 ?
 공백 및 엔터표시 : Ctrl + Shift + W
+
+==============================================================================
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3-Column Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>범주</th>
+        <th>명령</th>
+        <th>단축키</th>
+    </tr>
+    <tr>
+        <td>Worksheet</td>
+        <td>SQL 워크시트(W)</td>
+        <td>Alt-F10</td>
+    </tr>
+    <tr>
+        <td>Worksheet</td>
+        <td>계획 설명(E)...</td>
+        <td>F10</td>
+    </tr>
+    <tr>
+        <td>Worksheet</td>
+        <td>내역(H)</td>
+        <td>F8</td>
+    </tr>
+    <tr>
+        <td>Worksheet</td>
+        <td>롤백(R)</td>
+        <td>F12</td>
+    </tr>
+    <tr>
+        <td>Worksheet</td>
+        <td>명령문 실행</td>
+        <td>F9</td>
+    </tr>
+    <tr>
+        <td>Worksheet</td>
+        <td>명령문 실행</td>
+        <td>Ctrl-Enter</td>
+    </tr>
+    <tr>
+        <td>Worksheet</td>
+        <td>비공유 SQL 워크시트</td>
+        <td>Ctrl-Shift-N</td>
+    </tr>
+    <tr>
+        <td>Worksheet</td>
+        <td>스크립트 실행</td>
+        <td>F5</td>
+    </tr>
+    <tr>
+        <td>Worksheet</td>
+        <td>자동 추적(A)...</td>
+        <td>F6</td>
+    </tr>
+    <tr>
+        <td>Worksheet</td>
+        <td>지우기(C)</td>
+        <td>Ctrl-D</td>
+    </tr>
+    <tr>
+<td>커밋(O)</td>
+        <td>F11</td>
+    </tr>
+    <tr>
+        <td>검색</td>
+        <td>다음 찾기(N)</td>
+        <td>F3</td>
+    </tr>
+    <tr>
+        <td>검색</td>
+        <td>바꾸기...(R)</td>
+        <td>Ctrl-R</td>
+    </tr>
+    <tr>
+        <td>검색</td>
+        <td>이전 찾기(P)</td>
+        <td>Shift-F3</td>
+    </tr>
+    <tr>
+        <td>검색</td>
+        <td>증분 뒤로 찾기(B)</td>
+        <td>Ctrl-Shift-E</td>
+    </tr>
+    <tr>
+        <td>검색</td>
+        <td>증분 앞으로 찾기(O)</td>
+        <td>Ctrl-E</td>
+    </tr>
+    <tr>
+        <td>검색</td>
+        <td>찾기...(F)</td>
+        <td>Ctrl-F</td>
+    </tr>
+    <tr>
+        <td>검색</td>
+        <td>커서 다음 단어 찾기</td>
+        <td>Ctrl-F3</td>
+    </tr>
+    <tr>
+        <td>검색</td>
+        <td>커서 앞 단어 찾기</td>
+        <td>Ctrl-Shift-F3</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>SQL 내역: 다음 내역에서 추가</td>
+        <td>Ctrl-Shift-Down</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>SQL 내역: 다음 내역으로 바꾸기</td>
+        <td>Ctrl-Down</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>SQL 내역: 이전 내역에서 추가</td>
+        <td>Ctrl-Shift-Up</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>SQL 내역: 이전 내역으로 바꾸기</td>
+        <td>Ctrl-Up</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>고급 형식...</td>
+        <td>Ctrl-Shift-F7</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>구현 디버그</td>
+        <td>Shift-F9</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>대문자/소문자/첫 자를 대문자로</td>
+        <td>Ctrl-Quote</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>변경 사항 롤백</td>
+        <td>F12</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>변경 사항 커밋</td>
+        <td>F11</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>보기 고정</td>
+        <td>Ctrl-Shift-P</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>새로 고침</td>
+        <td>Ctrl-R</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>새로 만들기(N)...</td>
+        <td>Ctrl-N</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>테스트 실행</td>
+        <td>F9</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>파일 실행</td>
+        <td>Ctrl-F11</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>팝업 메뉴</td>
+        <td>Shift-F10</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>팝업 메뉴</td>
+        <td>Context Menu</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>팝업 설명</td>
+        <td>Shift-F4</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>편집(E)</td>
+        <td>Ctrl-L</td>
+    </tr>
+    <tr>
+        <td>기타</td>
+        <td>형식</td>
+        <td>Ctrl-F7</td>
+    </tr>
+    <tr>
+        <td>데이터 편집기</td>
+        <td>데이터 필터링</td>
+        <td>Ctrl-Alt-F</td>
+    </tr>
+    <tr>
+        <td>데이터 편집기</td>
+        <td>변경 사항 롤백</td>
+        <td>F12</td>
+    </tr>
+    <tr>
+        <td>데이터 편집기</td>
+        <td>변경 사항 커밋</td>
+        <td>F11</td>
+    </tr>
+    <tr>
+        <td>데이터 편집기</td>
+        <td>새로 고침</td>
+        <td>Ctrl-R</td>
+    </tr>
+    <tr>
+        <td>데이터 편집기</td>
+        <td>선택된 행 삭제</td>
+        <td>Ctrl-D</td>
+    </tr>
+    <tr>
+        <td>데이터 편집기</td>
+        <td>정렬...</td>
+        <td>Ctrl-Alt-S</td>
+    </tr>
+    <tr>
+        <td>데이터 편집기</td>
+        <td>행 삽입</td>
+        <td>Ctrl-I</td>
+    </tr>
+    <tr>
+        <td>도구</td>
+        <td>공백 표시</td>
+        <td>Ctrl-Shift-W</td>
+    </tr>
+    <tr>
+        <td>도움말</td>
+        <td>뒤로</td>
+        <td>Ctrl-Alt-Left</td>
+    </tr>
+    <tr>
+        <td>도움말</td>
+        <td>문맥에 따른 도움말</td>
+        <td>F1</td>
+    </tr>
+    <tr>
+        <td>도움말</td>
+        <td>문맥에 따른 도움말</td>
+        <td>Shift-F1</td>
+    </tr>
+    <tr>
+        <td>도움말</td>
+        <td>앞으로</td>
+        <td>Ctrl-Alt-Right</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>감시...(W)</td>
+        <td>Ctrl-F5</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>검사...(I)</td>
+        <td>Ctrl-I</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>내부 이동</td>
+        <td>F7</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>외부 이동</td>
+        <td>Shift-F7</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>이동 계속(C)</td>
+        <td>Shift-F8</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>재개</td>
+        <td>F9</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>전체 이동</td>
+        <td>F8</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>종료</td>
+        <td>Ctrl-F2</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>중단점 토글(T)</td>
+        <td>F5</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>커서까지 실행(U)</td>
+        <td>F4</td>
+    </tr>
+    <tr>
+        <td>디버그</td>
+        <td>프로젝트 디버그</td>
+        <td>Shift-F9</td>
+    </tr>
+    <tr>
+        <td>버전 지정</td>
+        <td>속성(버전 지정)</td>
+        <td>Ctrl-Shift-F1</td>
+    </tr>
+    <tr>
+        <td>버전 지정</td>
+        <td>작업 추가</td>
+        <td>Alt-A</td>
+    </tr>
+    <tr>
+        <td>버전 지정</td>
+        <td>체크아웃</td>
+        <td>Alt-H</td>
+    </tr>
+    <tr>
+        <td>버전 지정</td>
+        <td>체크인</td>
+        <td>Alt-L</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>블록 들여쓰기</td>
+        <td>Ctrl-]</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>블록 내어쓰기</td>
+        <td>Ctrl-[</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>수직 블록 선택</td>
+        <td>Alt-C</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>시작으로 이동</td>
+        <td>Ctrl-Home</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>시행 취소</td>
+        <td>Ctrl-Z</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>자동 줄 바꿈</td>
+        <td>Ctrl-Shift-W</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>잘라내기</td>
+        <td>Ctrl-X</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>재실행</td>
+        <td>Ctrl-Y</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>전체 들여쓰기</td>
+        <td>Ctrl-Shift-]</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>전체 선택</td>
+        <td>Ctrl-A</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>참조 보기</td>
+        <td>F3</td>
+    </tr>
+    <tr>
+        <td>소스 편집기</td>
+        <td>포맷 코드</td>
+        <td>Ctrl-Shift-F</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+[출처:https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=kaiz00&logNo=221616018855&categoryNo=0&parentCategoryNo=49&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search]
